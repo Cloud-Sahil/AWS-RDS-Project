@@ -32,3 +32,22 @@ Install MariaDB.
 
 ---
 
+##  Steps and Commands:
+### 1. RDS (Realtional Database Service)
+
+ Create RDS 
+
+ Full configuration
+
+ MariaDB
+
+ Templates -- Sandbox
+
+ Master username -- EX. (linux)
+
+ Master password --  EX. (redhat123)
+
+ VPC security group -- EX. (launch-wizard-1)
+
+ Create Database
+ 
