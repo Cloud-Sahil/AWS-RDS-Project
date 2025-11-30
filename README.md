@@ -51,6 +51,8 @@ Install MariaDB.
 
  Create Database
 
+---
+
  ### 2. EC2 (Elastic Compute Cloud)
 
 . Launch instance
