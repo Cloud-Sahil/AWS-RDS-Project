@@ -142,3 +142,55 @@ spring.datasource.password=redhat123
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
+```sh
+mvn clean package
+```
+```sh
+cd target/
+```
+```sh
+java -jar student-registration-backend-0.0.1-SNAPSHOT.jar
+```
+#### 7. Frontend
+
+##### Duplicate the tab
+
+```sh
+sudo -i
+```
+```sh
+apt update
+```
+```sh
+cd EasyCRUD/frontend/
+```
+```sh
+apt update && apt install nodejs npm -y
+```
+```sh
+npm install
+```
+##### Write env file
+```sh
+nano .env
+```
+```sh
+VITE_API_URL = "http://(Paste publicIP):8080/api"
+```
+##### Ex. VITE_API_URL = "http://54.82.224.7:8080/api"
+```sh
+ls -a
+```
+```sh
+npm run build
+```
+```sh
+apt install apache2 -y
+```
+```sh
+systemctl start apache2
+```
+```sh
+cp -rf dist/* /var/www/html/
+```
+## GoTo New Tab & Paste (Instances PublicIP)
