@@ -80,3 +80,65 @@ sudo -i
 ```sh
 apt update
 ```
+#### 3. Install Mysql-client
+```sh
+apt install mysql-client -y
+```
+#### 4. Mysql-client Database 
+```sh
+mysql -h (endpoint) -u (username) -p
+```
+```sh
+Enter password (password)
+```
+##### RDS Database Endpoint copy & paste
+##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
+##### Example: redhat123
+
+```sh
+CREATE DATABASE student_db;
+```
+```sh
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+```
+```sh
+show databases;
+```
+```sh
+exit;
+```
+#### 5. Clone the GitHub Repository
+```sh
+git clone <GitHub_Repository_Link>
+```
+##### Example: git clone https://github.com/username/student-registration.git
+
+#### 6. Backend
+
+```sh
+cd <GitHub_Repository_Name>/backend
+```
+```sh
+apt update
+```
+```sh
+apt install openjdk-17-jdk -y
+```
+```sh
+java -version
+```
+```sh
+apt install maven -y
+```
+##### Write src/main/resources/application.properties file
+```sh
+nano src/main/resources/application.properties .
+```
+```sh
+server.port=8080
+spring.datasource.url=jdbc:mariadb://database-1.curkg4kao7cw.us-east-1.rds.amazonaws.com:3306/student_db
+spring.datasource.username=linux
+spring.datasource.password=redhat123
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
