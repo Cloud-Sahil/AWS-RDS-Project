@@ -50,4 +50,31 @@ Install MariaDB.
  VPC security group -- EX. (launch-wizard-1)
 
  Create Database
- 
+
+ ### 2. EC2 (Elastic Compute Cloud)
+
+. Launch instance
+
+. Instance type -- EX. (c7i.xlarge)
+
+. Security groups -- EX. (launch-wizard-1)
+
+. Storage -- EX. (20GB)
+
+. Launch instance
+
+---
+
+
+### 3. Commands =
+
+#### 1. Switch to root user
+```sh
+sudo -i
+```
+
+
+#### 2. Update the instance
+```sh
+apt update
+```
