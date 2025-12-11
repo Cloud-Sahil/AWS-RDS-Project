@@ -111,13 +111,14 @@ exit;
 ```sh
 git clone <GitHub_Repository_Link>
 ```
-##### Example: git clone https://github.com/username/student-registration.git
+##### Example: git clone https://github.com/Rohit-1920/EasyCRUD.git
 
 #### 6. Backend
 
 ```sh
 cd <GitHub_Repository_Name>/backend
 ```
+##### Example: cd EasyCRUD/backend/
 ```sh
 apt update
 ```
